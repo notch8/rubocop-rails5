@@ -2,9 +2,9 @@
 
 module RuboCop
   module Cop
-    module RSpec
+    module Rails5
       # Do not use should when describing your tests.
-      # see: http://betterspecs.org/#should
+      # see: http://betteRails5s.org/#should
       #
       # The autocorrect is experimental - use with care! It can be configured
       # with CustomTransform (e.g. have => has) and IgnoredWords (e.g. only).

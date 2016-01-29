@@ -2,7 +2,7 @@
 
 module RuboCop
   module Cop
-    module RSpec
+    module Rails5
       # If the first argument of describe is a class, the class is exposed to
       # each example via described_class - this should be used instead of
       # repeating the class.
@@ -18,7 +18,7 @@ module RuboCop
       #     subject { described_class.do_something }
       #   end
       class DescribedClass < Cop
-        include RuboCop::RSpec::TopLevelDescribe
+        include RuboCop::Rails5::TopLevelDescribe
 
         MESSAGE = 'Use `described_class` instead of `%s`'
 

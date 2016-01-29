@@ -2,7 +2,7 @@
 
 module RuboCop
   module Cop
-    module RSpec
+    module Rails5
       # Checks that the second argument to the top level describe is the tested
       # method name.
       #
@@ -18,7 +18,7 @@ module RuboCop
       #   describe MyClass, '.my_class_method' do
       #   end
       class DescribeMethod < Cop
-        include RuboCop::RSpec::TopLevelDescribe
+        include RuboCop::Rails5::TopLevelDescribe
 
         MESSAGE = 'The second argument to describe should be the method ' \
                   "being tested. '#instance' or '.class'"

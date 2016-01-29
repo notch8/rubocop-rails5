@@ -2,7 +2,7 @@
 
 module RuboCop
   module Cop
-    module RSpec
+    module Rails5
       # When you have to assign a variable instead of using an instance
       # variable, use let.
       #

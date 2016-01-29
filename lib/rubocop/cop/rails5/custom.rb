@@ -2,9 +2,9 @@
 
 module RuboCop
   module Cop
-    module RSpec
+    module Rails5
       class Custom < Cop
-        # include RuboCop::RSpec::TopLevelDescribe
+        # include RuboCop::Rails5::TopLevelDescribe
 
         MESSAGE = "Hey you tripped the custom one."
         METHOD_STRING_MATCHER = /Rails/

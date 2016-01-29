@@ -2,7 +2,7 @@
 
 module RuboCop
   module Cop
-    module RSpec
+    module Rails5
       # Check that the first argument to the top level describe is the tested
       # class or module.
       #
@@ -18,7 +18,7 @@ module RuboCop
       #   describe "A feature example", type: :feature do
       #   end
       class DescribeClass < Cop
-        include RuboCop::RSpec::TopLevelDescribe
+        include RuboCop::Rails5::TopLevelDescribe
 
         REQUEST_PAIR = s(:pair, s(:sym, :type), s(:sym, :request))
         FEATURE_PAIR = s(:pair, s(:sym, :type), s(:sym, :feature))

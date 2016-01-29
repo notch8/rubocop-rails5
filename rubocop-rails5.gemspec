@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 $LOAD_PATH.unshift File.expand_path('../lib', __FILE__)
-require 'rubocop/rails5/version'
+require 'rubocop/rspec/version'
 
 Gem::Specification.new do |spec|
   spec.name = 'rubocop-rails5'

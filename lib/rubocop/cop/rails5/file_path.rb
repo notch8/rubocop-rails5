@@ -2,7 +2,7 @@
 
 module RuboCop
   module Cop
-    module RSpec
+    module Rails5
       # Checks the path of the spec file and enforces that it reflects the
       # described class/module and its optionally called out method.
       #
@@ -15,7 +15,7 @@ module RuboCop
       #   my_class_method_spec.rb  # describe MyClass, '#method'
       #   my_class_spec.rb         # describe MyClass
       class FilePath < Cop
-        include RuboCop::RSpec::TopLevelDescribe
+        include RuboCop::Rails5::TopLevelDescribe
 
         MESSAGE = 'Spec path should end with `%s`'
         METHOD_STRING_MATCHER = /^[\#\.].+/

@@ -2,7 +2,7 @@
 
 module RuboCop
   module Cop
-    module RSpec
+    module Rails5
       # Checks for multiple top level describes. They should be nested if it is
       # for the same class or module or seperated into different files.
       #
@@ -21,7 +21,7 @@ module RuboCop
       #     end
       #   end
       class MultipleDescribes < Cop
-        include RuboCop::RSpec::TopLevelDescribe
+        include RuboCop::Rails5::TopLevelDescribe
 
         MESSAGE = 'Do not use multiple top level describes - try to nest them.'
 
